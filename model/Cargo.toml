@@ -1,0 +1,11 @@
+[package]
+name = "model"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+aws-sdk-dynamodb.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_dynamo.workspace = true
+type-safe-id.workspace = true
