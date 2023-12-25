@@ -1,0 +1,9 @@
+[package]
+name = "persist"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+aws-config = "1.1.1"
+aws-sdk-dynamodb.workspace = true
