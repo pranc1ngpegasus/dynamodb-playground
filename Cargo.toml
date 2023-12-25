@@ -1,3 +1,13 @@
+[package]
+name = "dynamodb-playground"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+model.workspace = true
+persist.workspace = true
+tokio.workspace = true
+
 [workspace]
 members = ["model", "persist"]
 resolver = "2"
@@ -10,6 +20,7 @@ persist.path = "persist"
 serde = { version = "1.0.193", features = ["derive"] }
 serde_dynamo = { version = "4.2.13", features = ["aws-sdk-dynamodb+1"] }
 serde_json = "1.0.108"
+tokio = { version = "1.35.1", features = ["full"] }
 type-safe-id = "0.2.1"
 
 [workspace.package]
